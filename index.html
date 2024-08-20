@@ -2,28 +2,35 @@
 <html lang="en">
   <head>
   <title>My Portfolio</title>
-    <link rel="stylesheet" href="./index.css" />  
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://kit.fontawesome.com/e775fb5bbb.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
-      <h2>Anne-Cécile Mainier</h2>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Contact</a></li>
+      <h2 id="logo">Anne-Cécile Mainier</h2>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#about-me">About Me</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="">Contact</a></li>
       </ul>
     </nav>
   
     <main>
       <section id="about-me">
-        <h2>About Me</h2>
+        <div  class="about-me-container">
+          <div class="about-me-text-container"
+         <h2>About Me</h2>
           <p>Hey! I'm Anne-Cécile. I'm French and I've been living in London with my family for the past 6 years.</p>
           <p>I've been an IT business project manager, with 10 years of experience in the glass packaging industry and at the French ministry of the Armies.
             FR-EN Customer advisor and LEGO brick specialist for the past 3 years and a half, I'm currently developing my software engineering skills for future career challenges. To be continued...</p>
           <p>In my free time, I like to read fantasy novels, play video games (with or without my son), tend my garden and bake.</p>
-          <img  src="./img/lucy"
-                alt="A picture of Lucy Wyldstyle"/>
+          </div>
+          <a href="https://www.youtube.com/watch?v=9UJ1syXaNoQ" target="_blank"><img  src="./img/lucy.png"
+                alt="A picture of Lucy Wyldstyle"
+                class="portrait"/>
+          </a>
+        </div>
           </section>
       <section id="projects">
         <h2>Projects</h2>
@@ -31,11 +38,18 @@
       </section>
       <section id="skills">
         <h2>Skills</h2>
-          <p></p>
+          <div>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-react"></i>
+          </div>
       </section>
     </main>  
-  </body>
+  
   <footer>
     Made with <span class="heart">♥</span> in London
   </footer>
-</html>
+ 
+</body>
+  </html>
