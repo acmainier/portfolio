@@ -1,4 +1,8 @@
 
+html, body {
+  height: 100%;
+}
+
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -52,6 +56,19 @@ a {
 .portrait {
   width: 300px;
   border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+summary {
+  list-style-image: url(./img/box-archive.svg);
 }
 
 .skills-container {
