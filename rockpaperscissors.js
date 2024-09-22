@@ -67,4 +67,6 @@ const playGame = () => {
   console.log(WinnerIs);
 };
 
-playGame();
+document.addEventListener("DOMContentLoaded", (event) => {
+  playGame();
+});
