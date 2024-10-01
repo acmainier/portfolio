@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>My Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./index.css" />
-    <script src="https://kit.fontawesome.com/e775fb5bbb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e775fb5bbb.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="rockpaperscissors.js"></script>
   </head>
   <body>
@@ -16,13 +19,20 @@
         <li class="nav-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
-<main> 
-    <p id="result">Result</p>
-    
-</main>
-<footer>
-    Made with <span class="heart">♥</span> in London
-  </footer>
-</body>
+    <main>
+      <div>
+        <p>Choose:</p>
+        <div>
+          <button id="rock">🪨</button>
+          <button id="scissors">✂️</button>
+          <button id="paper">🗒️</button>
+          <button id="bomb">💣</button>
+        </div>
+      </div>
+      <p>You chose: <span id="yourchoice"></span></p>
+      <p>The Computer chose: <span id="computerchoice"></span></p>
+      <p>The Winner is <span id="result"></span></p>
+    </main>
+    <footer>Made with <span class="heart">♥</span> in London</footer>
+  </body>
 </html>
-  
