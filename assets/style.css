@@ -12,9 +12,15 @@ html {
   background-color: var(--off-white);
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--off-white);
+}
+
 body {
   color: var(--text-dark);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -123,6 +129,66 @@ section {
 
 .skills-logo {
   margin: 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-item label {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--green-dark);
+}
+
+.form-item input,
+.form-item textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--green-mid);
+  border-radius: 6px;
+  background-color: var(--off-white);
+  font-family: inherit;
+  font-size: 1em;
+  color: var(--text-dark);
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+  outline: none;
+  border-color: var(--green-dark);
+}
+
+.submit-button {
+  align-self: flex-start;
+  padding: 10px 24px;
+  background-color: var(--green-dark);
+  color: var(--off-white);
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--green-mid);
+}
+
+.contact-links {
+  display: flex;
+  gap: 16px;
 }
 
 .heart {
