@@ -1,3 +1,11 @@
+:root {
+  --green-dark: #2d6a4f; /* nav links, h2 underlines */
+  --green-mid: #52b788; /* accents, hover states, card borders */
+  --cream: #faf3e0; /* section backgrounds */
+  --off-white: #fdfdf5; /* page background or card background */
+  --text-dark: #1b1b1b; /* body text */
+}
+
 html {
   height: 100%;
 }
@@ -31,9 +39,8 @@ nav {
 }
 
 a {
-  text-decoration: none;
   font-weight: 600;
-  color: #275214;
+  color: var(--green-dark);
 }
 
 #name {
@@ -41,7 +48,9 @@ a {
 }
 
 h2 {
-  text-decoration: underline #275214;
+  text-decoration: underline var(--green-dark);
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .about-me-container {
@@ -50,6 +59,7 @@ h2 {
 
 .about-me-text-container {
   margin-right: 16px;
+  text-align: justify;
 }
 
 .portrait {
@@ -65,7 +75,10 @@ h2 {
 }
 
 section {
-  padding: 16px 0;
+  margin-top: 16px;
+  padding: 8px;
+  background-color: var(--cream);
+  border-radius: 12px;
 }
 
 .skills-container {
@@ -78,7 +91,7 @@ section {
 }
 
 .heart {
-  color: red;
+  color: var(--green-dark);
 }
 
 footer {
