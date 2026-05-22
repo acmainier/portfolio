@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>My Portfolio</title>
+    <title>Anne-Cécile Mainier - Contact</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <h1 id="name">Anne-Cécile Mainier</h1>
         <ul class="nav-items">
           <li class="nav-item"><a href="./index.html#about-me">About Me</a></li>
@@ -20,10 +20,15 @@
       <section id="contact">
         <h2>Contact</h2>
         <p>Have an interesting project? I would love to hear about it!</p>
-        <form class="contact-form">
+        <form class="contact-form" action="submit.php" method="post">
           <div class="form-item">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" />
+            <label for="contact-name">Name</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              placeholder="Your name"
+            />
           </div>
           <div class="form-item">
             <label for="email">Email</label>
@@ -47,10 +52,18 @@
         </form>
 
         <div class="contact-links">
-          <a href="https://www.linkedin.com/in/anne-cecile-mainier-57727923/"
+          <a
+            href="https://www.linkedin.com/in/anne-cecile-mainier-57727923/"
+            target="_blank"
+            rel="noopener noreferrer"
             >LinkedIn</a
           >
-          <a href="https://github.com/acmainier">GitHub</a>
+          <a
+            href="https://github.com/acmainier"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
           <a href="mailto:notmyrealemail@gmail.com">Email</a>
           <a href="tel:0123456789" class="contact-link">Phone</a>
         </div>
