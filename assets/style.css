@@ -203,4 +203,8 @@ footer {
   .about-me-container {
     flex-direction: column;
   }
+  .portrait {
+    display: block;
+    margin: 0 auto;
+  }
 }
